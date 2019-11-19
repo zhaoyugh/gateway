@@ -4,6 +4,6 @@ package main
 import "fmt"
 
 func main(){
-    fmt.Println("zhaoyu")
+    fmt.Println("赵宇大好人")
 }
 
