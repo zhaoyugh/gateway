@@ -10,7 +10,7 @@ func main(){
             "message": "pong",
         })
     })
-    r.Run()
+    r.Run(":8081")
     fmt.Println("赵宇大好人111")
 }
 
