@@ -1,6 +1,6 @@
 FROM golang
 COPY deploy/bin/gateway /
-RUN chmod 777 gateway
+RUN chmod 777 /gateway
 
 ENV PARAMS=""
 ENTRYPOINT ["sh","-c","/gateway $PARAMS"]
