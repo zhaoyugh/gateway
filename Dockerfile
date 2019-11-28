@@ -1,5 +1,5 @@
 FROM golang
-COPY /data/go/bin/gateway /
+COPY /data/go/deploy/bin /
 RUN chmod 777 /data/go/bin/ -R
 
 ENV PARAMS=""
