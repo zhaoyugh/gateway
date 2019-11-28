@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  # gateway service
+  gateway:
+    image: registry.cn-hangzhou.aliyuncs.com/zhaoyugh/zhaoyu:gateway
+    networks:
+      - web
+    env_file:
+      - ./.env
+    environment:
+      - PARAMS=${registryAddr} ${redisAddr} ${mysqlAddr} ${mqAddr}
+    labels:
+      - "traefik.backend=gateway"
+      - "traefik.docker.port=8081"
