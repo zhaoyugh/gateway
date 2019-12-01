@@ -4,7 +4,7 @@ import "fmt"
 import "github.com/gin-gonic/gin"
 
 func main(){
-    fmt.Println("赵宇大好人11223332")
+    fmt.Println("赵宇大好人1122ee3332")
     r := gin.Default()
     r.GET("/ping", func(c *gin.Context) {
         c.JSON(200, gin.H{
