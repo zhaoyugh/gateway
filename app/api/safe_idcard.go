@@ -26,6 +26,6 @@ func SafeDecryptIdcard(c *gin.Context){
         c.String(http.StatusInternalServerError, err.Error())
         return
     }
-    c.String(http.StatusOK, "身份证号为: %s", idcart)
+    c.String(http.StatusOK, "身份证号为:: %s", idcart)
     return
 }
